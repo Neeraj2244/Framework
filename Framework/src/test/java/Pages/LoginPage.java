@@ -14,8 +14,6 @@ public class LoginPage
 
 	public LoginPage(WebDriver ldriver)
 	{
-
-
 		this.driver = ldriver;
 		PageFactory.initElements(driver, this);
 
