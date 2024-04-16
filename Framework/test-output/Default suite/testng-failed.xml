@@ -8,8 +8,9 @@
           <include name="SceenshotCondition"/>
           <include name="GoToProductPage"/>
           <include name="TearDown"/>
-          <include name="IntialSetup"/>
+          <include name="LoginPage"/>
           <include name="Configuration"/>
+          <include name="IntialSetup"/>
           <include name="ExcelDetails"/>
         </methods>
       </class> <!-- TestCases.FirstPage -->

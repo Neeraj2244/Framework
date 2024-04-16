@@ -16,13 +16,13 @@ public class HomePage {
 
 	private void FactorySetting() 
 	{
-		new SettingsSection(driver);
-		ss = PageFactory.initElements(driver, SettingsSection.class);
+		ss = new SettingsSection(driver);
 	}
 
 	public HomePage(WebDriver driver2) 
 	{
 		this.driver = driver2;
+		PageFactory.initElements(driver, this);
 	}
 
 	@Test

@@ -30,10 +30,10 @@ public class FirstPage extends BaseClass{
 	@Test(enabled = false)
 	private void FactorySetup() 
 	{
-		l =  PageFactory.initElements(driver, LoginPage.class);
-		hp = PageFactory.initElements(driver, HomePage.class);
+		//l =  PageFactory.initElements(driver, LoginPage.class);
+		l = new LoginPage(driver);
+		hp = new HomePage(driver);
 	}
-
 
 	@Test(priority = 1)
 	public void LoginPage() throws InterruptedException 
